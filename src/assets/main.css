@@ -6,7 +6,12 @@
 }
 
 @font-face {
-    font-family: Popoins_Bold;
+    font-family: Poppins_SemiBold;
+    src: url(fonts/Poppins-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: Poppins_Bold;
     src: url(fonts/Poppins-Bold.ttf);
 }
 
@@ -25,4 +30,25 @@ body {
 .container {
     width: 1175px;
     margin: 0 auto;
+}
+
+@media (max-width: 1199px) {
+    .container {
+        width: 900px;
+    }
+}
+@media (max-width: 1023px) {
+    .container {
+        width: 768px;
+    }
+}
+@media (max-width: 767px) {
+    .container {
+        width: 420px;
+    }
+}
+@media (max-width: 419px) {
+    .container {
+        width: 320px;
+    }
 }

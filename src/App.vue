@@ -1,107 +1,94 @@
 <script>
+import Header from "./components/Header.vue";
 
+export default {
+  components: {
+    Header,
+  },
+};
 </script>
 
 <template>
-  <header class="header">
+  <Header />
+  <section class="intro">
     <div class="container">
-      <h1 class="header__logo">Travelulu</h1>
-      <div id="myNav" class="overlay">
-        <div class="overlay-content">
-            <div class="overlay-content__top">
-              <div class="container">
-                <h1 class="header__logo">Travelulu</h1>
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-              </div>
-            </div>
-          <a href="#" class="overlay__link">Home</a>
-          <a href="#" class="overlay__link">Services</a>
-          <a href="#" class="overlay__link">Contients</a>
-          <a href="#" class="overlay__link">Contact</a>
-          <a href="#" class="overlay__link">Privacy</a>
+      <div class="intro__text">
+        <h1 class="title">Plan your next big trip overseas</h1>
+        <div class="intro__buttons">
+          <a href="#" class="intro__btn1">begin plans</a>
+          <a href="#" class="intro__btn2">review plans</a>
         </div>
       </div>
-      <span style="font-size:30px;cursor:pointer;color:#5F2EEA" onclick="openNav()">&#9776;</span>
     </div>
-  </header>
+  </section>
 </template>
 
-<style scoped>
-  /* Header */
+<style scoped lang="scss">
+/* Intro */
 
-  .header {
-    max-width: 100%;
-    padding: 34px 0px;
-    border-bottom: 1px solid #D9DBE9;
-    .container {
-      display: flex;
-      justify-content: space-between;
-    }
-  }
-  .header__logo {
-    font-family: Popoins_Bold;
-    font-size: 34px;
-    color: #5F2EEA;
-  }
-
-  .overlay {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    right: 0;
-    background-color: #2A00A2;
-    overflow-x: hidden;
-    transition: 0.5s;
-  }
-  .overlay-content {
+.intro {
+  height: 620px;
+  background-image: url(assets/img/intro/boarding.png);
+  background-position: right;
+  background-repeat: no-repeat;
+  .intro__text {
     position: relative;
-    width: 100%;
-    text-align: left;
-    .container {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
+    top: 200px;
   }
-  .overlay-content__top {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-    padding-bottom: 25px;
-    border-bottom: 1px solid #BCA4FF;
-    .container {
-      display: flex;
-      justify-content: space-between;
-      flex-direction: row;
-    }
-    .header__logo {
-      color: #FCFCFC;
-      margin-top: 15px;
-    }
+}
+.title {
+  font-family: Poppins_Bold;
+  font-size: 64px;
+  color: #4e4b66;
+  line-height: 66px;
+  width: 669px;
+}
+.intro__buttons {
+  width: 510px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+.intro__btn1 {
+  font-family: Poppins_SemiBold;
+  font-size: 16px;
+  color: #f7f7fc;
+  text-decoration: none;
+  width: 243px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40px;
+  background: #5f2eea;
+  text-transform: uppercase;
+  transition: 0.3s;
+  &:hover {
+    border: 3px solid #5f2eea;
+    background: none;
+    color: #5f2eea;
+    transition: all 0.3s;
   }
-
-  .overlay__link {
-    font-family: Poppins;
-    text-decoration: none;
-    font-size: 30px;
-    color: #F3EFFF;
-    display: block;
-    transition: 0.3s;
-    padding: 40px 19.5%;
-    &:hover {
-      background-color: #5F2EEA;
-    }
+}
+.intro__btn2 {
+  font-family: Poppins_SemiBold;
+  font-size: 16px;
+  color: #5f2eea;
+  text-decoration: none;
+  width: 243px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40px;
+  border: 3px solid #5f2eea;
+  text-transform: uppercase;
+  transition: 0.3s;
+  &:hover {
+    background: #5f2eea;
+    border: none;
+    color: #f7f7fc;
+    transition: all 0.3s;
   }
-
-  .overlay a:hover, .overlay a:focus {
-    color: #f1f1f1;
-  }
-
-  .overlay .closebtn {
-    text-decoration: none;
-    font-size: 50px;
-    color: #F3EFFF;
-  }
+}
 </style>
