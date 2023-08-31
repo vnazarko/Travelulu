@@ -14,7 +14,7 @@ export default {
 
     dataForCard: [
       {
-        imgUrl: "/src/assets/img/cards/Time.svg.png",
+        imgUrl: "/src/assets/img/cards/Time.png",
         title: "Plan Trip Dates",
         text: "orem ipsum dolor sit amet, consectetur adipiscing elit. ",
       },
