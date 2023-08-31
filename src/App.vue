@@ -1,12 +1,34 @@
 <script>
 import Header from "./components/Header.vue";
+import Title from "./components/Title.vue";
+import Card from "./components/Card.vue";
 
 export default {
   components: {
     Header,
+    Title,
+    Card,
   },
   data: () => ({
     small: false,
+
+    dataForCard: [
+      {
+        imgUrl: "/src/assets/img/cards/Time.svg.png",
+        title: "Plan Trip Dates",
+        text: "orem ipsum dolor sit amet, consectetur adipiscing elit. ",
+      },
+      {
+        imgUrl: "/src/assets/img/cards/Plane and Money.svg",
+        title: "Pay For Your Flights",
+        text: "orem ipsum dolor sit amet, consectetur adipiscing elit. ",
+      },
+      {
+        imgUrl: "/src/assets/img/cards/Money.svg",
+        title: "Plan Your Finances",
+        text: "orem ipsum dolor sit amet, consectetur adipiscing elit. ",
+      },
+    ],
   }),
   created() {
     window.addEventListener("resize", this.onResize);
@@ -37,6 +59,17 @@ export default {
           <a href="#" class="intro__btn2">review plans</a>
         </div>
       </div>
+    </div>
+  </section>
+
+  <section class="tool">
+    <div class="container">
+      <Title little="tool list" title="Use our assortment of travel plan tools" />
+      <ul class="cards">
+        <li class="card-box" v-for="(info, index) in dataForCard" :key="index">
+          <Card :imgUrl="info.imgUrl" :title="info.title" :text="info.text" />
+        </li>
+      </ul>
     </div>
   </section>
 </template>
@@ -150,5 +183,19 @@ export default {
     width: 400px;
     height: 280px;
   }
+}
+
+// Cards
+
+.tool {
+  width: 100%;
+}
+
+.cards {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 </style>
