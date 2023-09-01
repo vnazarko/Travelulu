@@ -11,6 +11,7 @@ export default {
   },
   data: () => ({
     small: false,
+    show: false,
 
     dataForCard: [
       {
@@ -27,6 +28,43 @@ export default {
         imgUrl: "/src/assets/img/cards/Money.svg",
         title: "Plan Your Finances",
         text: "orem ipsum dolor sit amet, consectetur adipiscing elit. ",
+      },
+    ],
+    services: [
+      {
+        link: "Planning",
+      },
+      {
+        link: "Financing",
+      },
+      {
+        link: "Purchasing",
+      },
+      {
+        link: "Meeting",
+      },
+      {
+        link: "Flying",
+      },
+    ],
+    coyntries: [
+      {
+        link: "<a href='#'>North America</a>",
+      },
+      {
+        link: "<a href='#'>South America</a>",
+      },
+      {
+        link: "<a href='#'>Asia</a>",
+      },
+      {
+        link: "<a href='#'>Africa</a>",
+      },
+      {
+        link: "<a href='#'>Europe</a>",
+      },
+      {
+        link: "<a href='#'>Australia</a>",
       },
     ],
   }),
@@ -78,17 +116,89 @@ export default {
       <Title little="photo gallery" title="View the wonderful places you can visit" />
       <div class="gallery-slider">
         <div class="gallery-slide">
-          <img src="./assets/img/slider/first.png" alt="" class="slide__img" />
+          <img src="./assets/img/slider/first.png" alt="" class="slide-img" />
         </div>
         <div class="gallery-slide">
-          <img src="./assets/img/slider/second.png" alt="" class="slide__img" />
+          <img src="./assets/img/slider/second.png" alt="" class="slide-img" />
         </div>
         <div class="gallery-slide">
-          <img src="./assets/img/slider/third.png" alt="" class="slide__img" />
+          <img src="./assets/img/slider/third.png" alt="" class="slide-img" />
         </div>
       </div>
     </div>
   </section>
+
+  <section class="feedback">
+    <div class="container">
+      <Title little="testimonials" title="Let’s see what fans of Travelulu have to say" />
+      <div class="feedback__cards">
+        <img src="./assets/img/feedback/Group 260.png" alt="" class="feedback__card" />
+        <img src="./assets/img/feedback/Group 259.png" alt="" class="feedback__card" />
+        <img src="./assets/img/feedback/Group 261.png" alt="" class="feedback__card" />
+      </div>
+    </div>
+  </section>
+
+  <section class="info">
+    <div class="container">
+      <h1 class="info__title">Need more information to get started?</h1>
+      <a href="#" class="info__btn">contact us</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__text">
+        <h1 class="footer__title">Travelulu</h1>
+        <p class="footer__p">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac ullamcorper
+          magna, ac laoreet ex. Integer a consequat lectus. Nullam tortor sem
+        </p>
+        <p class="copyright">Copyright 2021, All Rights Reserved.</p>
+      </div>
+      <div class="footer__nav">
+        <nav v-bind="small">
+          <h1 class="nav__title">Services</h1>
+          <ul class="nav__list">
+            <li class="list__item"><a href="#" class="nav__link">Planning</a></li>
+            <li class="list__item"><a href="#" class="nav__link">Financing</a></li>
+            <li class="list__item"><a href="#" class="nav__link">Purhasing</a></li>
+            <li class="list__item"><a href="#" class="nav__link">Metting</a></li>
+            <li class="list__item"><a href="#" class="nav__link">Flying</a></li>
+            <li class="list__item">
+              <a href="#" class="nav__link">Planning</a>
+            </li>
+          </ul>
+        </nav>
+
+        <nav v-bind="small">
+          <h1 class="nav__title">Continents</h1>
+          <ul class="nav__list">
+            <li class="list__item"><a href="#" class="nav__link">North America</a></li>
+            <li class="list__item"><a href="#" class="nav__link">South America</a></li>
+            <li class="list__item"><a href="#" class="nav__link">Asia</a></li>
+            <li class="list__item"><a href="#" class="nav__link">Africa</a></li>
+            <li class="list__item"><a href="#" class="nav__link">Europe</a></li>
+            <li class="list__item"><a href="#" class="nav__link">Australia</a></li>
+          </ul>
+        </nav>
+
+        <nav v-bind="small">
+          <h1 class="nav__title">Contact</h1>
+          <ul class="nav__list">
+            <li class="list__item"><p class="nav__link">travelulu@webdite.com</p></li>
+            <li class="list__item">
+              <p class="nav__link" style="width: 140px">
+                22 Street Address, Suburb Address Main City, PO Box Country
+              </p>
+            </li>
+            <li class="list__item"><p class="nav__link">0 8888 88888</p></li>
+            <li class="list__item"><p class="nav__link">0 8888 88888</p></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </footer>
 </template>
 
 <style scoped lang="scss">
@@ -237,6 +347,163 @@ export default {
   .slide__img {
     width: 343px;
     height: 364px;
+  }
+}
+
+// feedback
+
+.feedback {
+  margin-top: 100px;
+}
+
+.feedback__cards {
+  margin-top: 57px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+
+// Info
+
+.info {
+  margin-top: 93px;
+  .container {
+    background-image: url(./assets/img/info/Mask.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 347px;
+    max-width: 1170px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+.info__title {
+  font-family: Poppins_Bold;
+  font-size: 48px;
+  color: #fff;
+  text-align: center;
+  width: 605px;
+}
+
+.info__btn {
+  font-family: Poppins_SemiBold;
+  font-size: 16px;
+  color: var(--grayscale-off-white, #fcfcfc);
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 243px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+  border: 2px solid #fcfcfc;
+  border-radius: 40px;
+  margin-top: 33px;
+  &:hover {
+    border-color: #fcfcfc;
+    background-color: #fcfcfc;
+    color: #5f2eea;
+    transition: all 0.3s;
+  }
+}
+
+@media (max-width: 767px) {
+  .info__title {
+    width: 380px;
+  }
+}
+
+// Footer
+
+.footer {
+  width: 100%;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.footer__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.footer__title {
+  font-family: Poppins_Bold;
+  font-size: 20px;
+  color: var(--primary-default, #5f2eea);
+}
+.footer__p {
+  font-family: Poppins;
+  color: #000;
+  width: 257px;
+  font-size: 14px;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+.copyright {
+  color: #000;
+  font-family: Poppins_SemiBold;
+  font-size: 14px;
+}
+.footer__nav {
+  width: 700px;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.nav__title {
+  font-family: Poppins_SemiBold;
+  font-size: 20px;
+  color: var(--grayscale-title-active, #14142b);
+  margin-bottom: 0;
+}
+.nav__list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.list__item {
+  margin-top: 23px;
+}
+.nav__link {
+  font-family: Poppins;
+  font-size: 14px;
+  color: var(--grayscale-label, #6e7191);
+  text-decoration: none;
+  transition: 0.3s;
+  &:hover {
+    color: #14142b;
+    transition: all 0.3s;
+  }
+}
+
+@media (max-width: 1023px) {
+  nav {
+    display: none;
+  }
+  .footer {
+    display: flex;
+    justify-content: center;
+  }
+  .footer__text {
+    display: flex;
+    justify-content: center;
   }
 }
 </style>
