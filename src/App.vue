@@ -72,6 +72,23 @@ export default {
       </ul>
     </div>
   </section>
+
+  <section class="gallery">
+    <div class="container">
+      <Title little="photo gallery" title="View the wonderful places you can visit" />
+      <div class="gallery-slider">
+        <div class="gallery-slide">
+          <img src="./assets/img/slider/first.png" alt="" class="slide__img" />
+        </div>
+        <div class="gallery-slide">
+          <img src="./assets/img/slider/second.png" alt="" class="slide__img" />
+        </div>
+        <div class="gallery-slide">
+          <img src="./assets/img/slider/third.png" alt="" class="slide__img" />
+        </div>
+      </div>
+    </div>
+  </section>
 </template>
 
 <style scoped lang="scss">
@@ -197,5 +214,29 @@ export default {
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+
+// gallery
+
+.gallery {
+  width: 100%;
+  margin-top: 135px;
+}
+
+.gallery-slider {
+  margin-top: 110px;
+  .gallery-slide {
+    // margin-right: 16px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .gallery-slide {
+    // margin-right: 8px;
+  }
+  .slide__img {
+    width: 343px;
+    height: 364px;
+  }
 }
 </style>

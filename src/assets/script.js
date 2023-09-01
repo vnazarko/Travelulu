@@ -10,3 +10,6 @@ function openNav() {
     document.getElementById("myNav").style.opacity = "0%";
 
   }
+
+
+
