@@ -8,7 +8,7 @@ export default {
 };
 </script>
 <template>
-  <div class="card">
+  <div class="card wow animate__animated animate__fadeInUp">
     <div class="card-container">
       <img :src="imgUrl" alt="" class="card__img" />
       <h1 class="title">{{ title }}</h1>

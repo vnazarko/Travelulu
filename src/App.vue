@@ -91,10 +91,16 @@ export default {
     <img src="./assets/img/intro/boarding.png" alt="" class="intro__bg" v-if="small" />
     <div class="container">
       <div class="intro__text">
-        <h1 class="title">Plan your next big trip overseas</h1>
+        <h1 class="title wow animate__animated animate__fadeInDown">
+          Plan your next big trip overseas
+        </h1>
         <div class="intro__buttons">
-          <a href="#" class="intro__btn1">begin plans</a>
-          <a href="#" class="intro__btn2">review plans</a>
+          <a href="#" class="intro__btn1 wow animate__animated animate__fadeInLeft"
+            >begin plans</a
+          >
+          <a href="#" class="intro__btn2 wow animate__animated animate__fadeInRight"
+            >review plans</a
+          >
         </div>
       </div>
     </div>
@@ -128,7 +134,7 @@ export default {
     </div>
   </section>
 
-  <section class="feedback">
+  <section class="feedback wow animate__animated animate__fadeInDown">
     <div class="container">
       <Title little="testimonials" title="Let’s see what fans of Travelulu have to say" />
       <div class="feedback__cards">
@@ -139,7 +145,7 @@ export default {
     </div>
   </section>
 
-  <section class="info">
+  <section class="info wow animate__animated animate__fadeInLeft">
     <div class="container">
       <h1 class="info__title">Need more information to get started?</h1>
       <a href="#" class="info__btn">contact us</a>
@@ -149,51 +155,86 @@ export default {
   <footer class="footer">
     <div class="container">
       <div class="footer__text">
-        <h1 class="footer__title">Travelulu</h1>
-        <p class="footer__p">
+        <h1 class="footer__title wow animate__animated animate__fadeInLeft">Travelulu</h1>
+        <p class="footer__p wow animate__animated animate__fadeInRight">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac ullamcorper
           magna, ac laoreet ex. Integer a consequat lectus. Nullam tortor sem
         </p>
-        <p class="copyright">Copyright 2021, All Rights Reserved.</p>
+        <p class="copyright wow animate__animated animate__fadeInLeft">
+          Copyright 2021, All Rights Reserved.
+        </p>
       </div>
       <div class="footer__nav">
         <nav v-bind="small">
-          <h1 class="nav__title">Services</h1>
+          <h1 class="nav__title wow animate__animated animate__fadeInLeft">Services</h1>
           <ul class="nav__list">
-            <li class="list__item"><a href="#" class="nav__link">Planning</a></li>
-            <li class="list__item"><a href="#" class="nav__link">Financing</a></li>
-            <li class="list__item"><a href="#" class="nav__link">Purhasing</a></li>
-            <li class="list__item"><a href="#" class="nav__link">Metting</a></li>
-            <li class="list__item"><a href="#" class="nav__link">Flying</a></li>
-            <li class="list__item">
+            <li class="list__item wow animate__animated animate__fadeInRight">
               <a href="#" class="nav__link">Planning</a>
+            </li>
+            <li class="list__item wow animate__animated animate__fadeInLeft">
+              <a href="#" class="nav__link">Financing</a>
+            </li>
+            <li class="list__item wow animate__animated animate__fadeInRight">
+              <a href="#" class="nav__link">Purhasing</a>
+            </li>
+            <li class="list__item wow animate__animated animate__fadeInLeft">
+              <a href="#" class="nav__link">Metting</a>
+            </li>
+            <li class="list__item wow animate__animated animate__fadeInRight">
+              <a href="#" class="nav__link">Flying</a>
+            </li>
+            <li class="list__item wow animate__animated animate__fadeInLeft">
+              <a href="#" class="nav__link wow animate__animated animate__fadeInRight"
+                >Planning</a
+              >
             </li>
           </ul>
         </nav>
 
         <nav v-bind="small">
-          <h1 class="nav__title">Continents</h1>
+          <h1 class="nav__title wow animate__animated animate__fadeInLeft">Continents</h1>
           <ul class="nav__list">
-            <li class="list__item"><a href="#" class="nav__link">North America</a></li>
-            <li class="list__item"><a href="#" class="nav__link">South America</a></li>
-            <li class="list__item"><a href="#" class="nav__link">Asia</a></li>
-            <li class="list__item"><a href="#" class="nav__link">Africa</a></li>
-            <li class="list__item"><a href="#" class="nav__link">Europe</a></li>
-            <li class="list__item"><a href="#" class="nav__link">Australia</a></li>
+            <li class="list__item wow animate__animated animate__fadeInRight">
+              <a href="#" class="nav__link">North America</a>
+            </li>
+            <li class="list__item wow animate__animated animate__fadeInLeft">
+              <a href="#" class="nav__link">South America</a>
+            </li>
+            <li class="list__item wow animate__animated animate__fadeInRight">
+              <a href="#" class="nav__link">Asia</a>
+            </li>
+            <li class="list__item wow animate__animated animate__fadeInLeft">
+              <a href="#" class="nav__link">Africa</a>
+            </li>
+            <li class="list__item wow animate__animated animate__fadeInRight">
+              <a href="#" class="nav__link">Europe</a>
+            </li>
+            <li class="list__item wow animate__animated animate__fadeInLeft">
+              <a href="#" class="nav__link">Australia</a>
+            </li>
           </ul>
         </nav>
 
         <nav v-bind="small">
           <h1 class="nav__title">Contact</h1>
           <ul class="nav__list">
-            <li class="list__item"><p class="nav__link">travelulu@webdite.com</p></li>
-            <li class="list__item">
-              <p class="nav__link" style="width: 140px">
+            <li class="list__item wow animate__animated animate__fadeInRight">
+              <p class="nav__link">travelulu@webdite.com</p>
+            </li>
+            <li class="list__item wow animate__animated animate__fadeInLeft">
+              <p
+                class="nav__link wow animate__animated animate__fadeInRight"
+                style="width: 140px"
+              >
                 22 Street Address, Suburb Address Main City, PO Box Country
               </p>
             </li>
-            <li class="list__item"><p class="nav__link">0 8888 88888</p></li>
-            <li class="list__item"><p class="nav__link">0 8888 88888</p></li>
+            <li class="list__item wow animate__animated animate__fadeInLeft">
+              <p class="nav__link">0 8888 88888</p>
+            </li>
+            <li class="list__item wow animate__animated animate__fadeInRight">
+              <p class="nav__link">0 8888 88888</p>
+            </li>
           </ul>
         </nav>
       </div>

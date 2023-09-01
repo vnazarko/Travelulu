@@ -1,22 +1,35 @@
 <template>
   <header class="header">
     <div class="container">
-      <h1 class="header__logo">Travelulu</h1>
+      <h1 class="header__logo wow animate__animated animate__fadeInLeft">Travelulu</h1>
       <div id="myNav" class="overlay">
         <div class="overlay-content">
           <div class="overlay-content__top">
             <div class="container">
               <h1 class="header__logo">Travelulu</h1>
-              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+              <a
+                href="javascript:void(0)"
+                class="closebtn wow animate__animated animate__fadeInRight"
+                onclick="closeNav()"
                 >&times;</a
               >
             </div>
           </div>
-          <a href="#" class="overlay__link">Home</a>
-          <a href="#" class="overlay__link">Services</a>
-          <a href="#" class="overlay__link">Contients</a>
-          <a href="#" class="overlay__link">Contact</a>
-          <a href="#" class="overlay__link">Privacy</a>
+          <a href="#" class="overlay__link wow animate__animated animate__fadeInLeft"
+            >Home</a
+          >
+          <a href="#" class="overlay__link wow animate__animated animate__fadeInRight"
+            >Services</a
+          >
+          <a href="#" class="overlay__link wow animate__animated animate__fadeInLeft"
+            >Contients</a
+          >
+          <a href="#" class="overlay__link wow animate__animated animate__fadeInRight"
+            >Contact</a
+          >
+          <a href="#" class="overlay__link wow animate__animated animate__fadeInRight"
+            >Privacy</a
+          >
         </div>
       </div>
       <span style="font-size: 30px; cursor: pointer; color: #5f2eea" onclick="openNav()"

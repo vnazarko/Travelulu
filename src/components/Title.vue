@@ -8,10 +8,10 @@ export default {
 </script>
 <template>
   <div class="text-block">
-    <p class="little">{{ little }}</p>
+    <p class="little wow animate__animated animate__fadeInUp">{{ little }}</p>
     <div class="title-block">
-      <h1 class="title">{{ title }}</h1>
-      <h2 class="subtitle">
+      <h1 class="title wow animate__animated animate__fadeInDown">{{ title }}</h1>
+      <h2 class="subtitle wow animate__animated animate__fadeInLeft">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque pulvinar
         lorem justo, Lorem ipsum dolor sit amet, consectetur
       </h2>
