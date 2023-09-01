@@ -376,15 +376,9 @@ export default {
 
 .gallery-slider {
   margin-top: 110px;
-  .gallery-slide {
-    // margin-right: 16px;
-  }
 }
 
 @media (max-width: 1199px) {
-  .gallery-slide {
-    // margin-right: 8px;
-  }
   .slide__img {
     width: 343px;
     height: 364px;
