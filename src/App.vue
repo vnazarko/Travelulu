@@ -132,7 +132,7 @@ export default {
     <div class="container">
       <Title little="testimonials" title="Let’s see what fans of Travelulu have to say" />
       <div class="feedback__cards">
-        <img src="./assets/img/feedback/Group 260.png" alt="" class="feedback__card" />
+        <img src="./assets/img/feedback/Group 261.png" alt="" class="feedback__card" />
         <img src="./assets/img/feedback/Group 259.png" alt="" class="feedback__card" />
         <img src="./assets/img/feedback/Group 261.png" alt="" class="feedback__card" />
       </div>
