@@ -134,13 +134,49 @@ export default {
     </div>
   </section>
 
-  <section class="feedback wow animate__animated animate__fadeInDown">
+  <section class="feedback">
     <div class="container">
       <Title little="testimonials" title="Let’s see what fans of Travelulu have to say" />
       <div class="feedback__cards">
-        <img src="./assets/img/feedback/Group 261.png" alt="" class="feedback__card" />
-        <img src="./assets/img/feedback/Group 259.png" alt="" class="feedback__card" />
-        <img src="./assets/img/feedback/Group 261.png" alt="" class="feedback__card" />
+        <div class="feedback__card wow animate__animated animate__fadeInDown">
+          <img src="./assets/img/feedback/logo.png" alt="" class="feedback_card__img" />
+          <h1 class="feedback_card__title">Joe Blo</h1>
+          <h2 class="feedback_card__subtitle">Visited: France</h2>
+          <hr
+            class="feedback_card__line"
+            style="width: 270px; height: 1px; background: #e4daff; border: none"
+          />
+          <p class="feedback_card__text">
+            “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
+            pulvinar lorem justo, id faucibus mi.”
+          </p>
+        </div>
+        <div class="feedback__card wow animate__animated animate__fadeInUp">
+          <img src="./assets/img/feedback/logo.png" alt="" class="feedback_card__img" />
+          <h1 class="feedback_card__title">Joe Blo</h1>
+          <h2 class="feedback_card__subtitle">Visited: France</h2>
+          <hr
+            class="feedback_card__line"
+            style="width: 270px; height: 1px; background: #e4daff; border: none"
+          />
+          <p class="feedback_card__text">
+            “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
+            pulvinar lorem justo, id faucibus mi.”
+          </p>
+        </div>
+        <div class="feedback__card wow animate__animated animate__fadeInDown">
+          <img src="./assets/img/feedback/logo.png" alt="" class="feedback_card__img" />
+          <h1 class="feedback_card__title">Joe Blo</h1>
+          <h2 class="feedback_card__subtitle">Visited: France</h2>
+          <hr
+            class="feedback_card__line"
+            style="width: 270px; height: 1px; background: #e4daff; border: none"
+          />
+          <p class="feedback_card__text">
+            “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
+            pulvinar lorem justo, id faucibus mi.”
+          </p>
+        </div>
       </div>
     </div>
   </section>
@@ -397,6 +433,43 @@ export default {
   justify-content: space-between;
   align-items: baseline;
   flex-wrap: wrap;
+}
+
+.feedback__card {
+  padding: 33px 42px;
+  border: 1px solid var(--primary-light, #e4daff);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.feedback_card__img {
+  margin-bottom: 15px;
+  width: 110px;
+  height: 110px;
+  margin: 15px auto 15px auto;
+}
+.feedback_card__title {
+  font-family: Poppins_SemiBold;
+  font-size: 18px;
+  color: var(--primary-default, #5f2eea);
+  margin-left: auto;
+  margin-right: auto;
+}
+.feedback_card__subtitle {
+  font-family: Poppins;
+  font-size: 18px;
+  color: var(--primary-default, #5f2eea);
+  margin-top: 14px;
+  margin-bottom: 22px;
+  margin: 14px auto 22px auto;
+}
+.feedback_card__text {
+  width: 303px;
+  font-family: Poppins;
+  font-size: 18px;
+  color: var(--grayscale-body, #4e4b66);
+  margin: 21px auto 0px auto;
+  text-align: center;
 }
 
 // Info
